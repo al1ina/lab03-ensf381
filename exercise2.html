@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab3 -- Exercise 1</title>
+</head>
+<body>
+<h1>JavaScript Lab Exercise 1</h1>
+<script>
+// Write your JavaScript code here
+// function add(x, y) { 
+//     return x + y; 
+// }
+// function subtract(x, y) { 
+//     return x - y; 
+// }
+
+// function add(x, y = 5) { 
+//     return x + y; 
+// }
+// function subtract(x, y = 5) { 
+//     return x - y; 
+// }
+
+const add = (x, y) => x + y;
+
+const subtract = (x, y) => x - y;
+
+const multiply = (x, y) => x * y;
+
+const divide = (x, y) => {
+    if (y == 0) { throw new Error("Cannot divide by 0"); }
+    return x / y;
+}
+
+function calculator(num1, num2, operation) {
+    return operation(num1, num2);
+}
+
+
+
+
+</script>
+</body>
+</html>
